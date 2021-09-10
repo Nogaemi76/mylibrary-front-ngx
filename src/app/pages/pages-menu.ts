@@ -12,7 +12,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
     children: [
       {
         title: 'Collection 1',
-        link: '/pages/iot-dashboard',
+        link: 'books/collection',
       },
     ],
   },
@@ -22,7 +22,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
     children: [
       {
         title: 'Wislist 1',
-        link: '/pages/iot-dashboard',
+        link: 'books/wishlist',
       },
     ],
   },
