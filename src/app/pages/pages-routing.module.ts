@@ -5,11 +5,16 @@ import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ECommerceComponent } from './e-commerce/e-commerce.component';
 import { NotFoundComponent } from './miscellaneous/not-found/not-found.component';
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 
 const routes: Routes = [{
   path: '',
   component: PagesComponent,
   children: [
+    {
+      path: 'user-dashboard',
+      component: UserDashboardComponent,
+    },
     {
       path: 'dashboard',
       component: ECommerceComponent,
@@ -18,11 +23,16 @@ const routes: Routes = [{
       path: 'iot-dashboard',
       component: DashboardComponent,
     },
-   {
-    path: 'books',
-      loadChildren: () => import('../features/books/books.module')
-        .then(m => m.BooksModule),
-  },
+    {
+      path: 'books',
+        loadChildren: () => import('../features/books/books.module')
+          .then(m => m.BooksModule),
+    },
+     {
+      path: 'user',
+        loadChildren: () => import('../features/user/user.module')
+          .then(m => m.UserModule),
+    },
     {
       path: 'layout',
       loadChildren: () => import('./layout/layout.module')
@@ -75,7 +85,7 @@ const routes: Routes = [{
     },
     {
       path: '',
-      redirectTo: 'dashboard',
+      redirectTo: 'user-dashboard',
       pathMatch: 'full',
     },
     {
