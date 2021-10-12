@@ -1,1 +1,58 @@
-<p>user-profile works!</p>
+<nb-card class="col-md-12 col-lg-12 col-xxxl-12 p-0">
+  <nb-card-body>
+    <nb-icon icon="home" pack="eva"></nb-icon>
+    <span class="ml-2" [routerLink]="['../../user-dashboard']">Accueil</span>
+    <span class="ml-2">/</span>
+    <span class="ml-2">Profil</span>
+    <span class="ml-2">/</span>
+    <span class="ml-2 text-primary">Mon Profil</span>
+  </nb-card-body>
+</nb-card>
+<nb-card>
+  <nb-card-header>
+    <div class="d-flex justify-content-between align-items-center w-100">
+      <nb-user size="large" name="Jane Doe" picture="https://via.placeholder.com/50/4479e7/ffffff?Text=IMG">
+      </nb-user>
+      <button nbButton hero status="danger" class="" [routerLink]="['../edit-user']">
+        <nb-icon icon="edit-outline" pack="eva"></nb-icon>
+        Éditer le profil
+      </button>
+    </div>
+  </nb-card-header>
+  <nb-card-body class="pt-0">
+    <nb-list>
+      <nb-list-item class="border-top-0">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <div>
+            <span>Pseudonyme</span>
+          </div>
+          <div class="font-weight-bold list-text">Janey</div>
+        </div>
+      </nb-list-item>
+      <nb-list-item class="border-top-0">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <div>
+            <span>Nom</span>
+          </div>
+          <div class="font-weight-bold list-text">Doe</div>
+        </div>
+      </nb-list-item>
+      <nb-list-item class="border-top-0">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <div>
+            <span>Prénom</span>
+          </div>
+          <div class="font-weight-bold list-text">Jane</div>
+        </div>
+      </nb-list-item>
+      <nb-list-item class="border-top-0">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <div>
+            <span>Email</span>
+          </div>
+          <div class="font-weight-bold list-text">janedoe@mail.com</div>
+        </div>
+      </nb-list-item>
+    </nb-list>
+  </nb-card-body>
+</nb-card>
