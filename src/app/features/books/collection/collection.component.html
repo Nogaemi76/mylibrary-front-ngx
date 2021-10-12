@@ -1,7 +1,17 @@
-<p>collection works!</p>
+<nb-card class="col-md-12 col-lg-12 col-xxxl-12 p-0">
+  <nb-card-body>
+    <nb-icon icon="home" pack="eva"></nb-icon>
+    <span class="ml-2" [routerLink]="['../../user-dashboard']">Accueil</span>
+    <span class="ml-2">/</span>
+    <span class="ml-2 text-primary">Mes collections</span>
+  </nb-card-body>
+</nb-card>
 
-<!-- <nb-breadcrumb>
-  <nb-breadcrumb-item>
-    <a routerLink=""><i class="nb-home"></i> Home</a>
-  </nb-breadcrumb-item>
-</nb-breadcrumb> -->
+<nb-card>
+  <nb-card-header></nb-card-header>
+  <nb-card-body>
+    <ng2-smart-table [settings]="settings" (deleteConfirm)="onDeleteConfirm($event)">
+    </ng2-smart-table>
+  </nb-card-body>
+  <nb-card-footer></nb-card-footer>
+</nb-card>
