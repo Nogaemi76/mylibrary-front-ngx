@@ -8,7 +8,15 @@
 </nb-card>
 
 <nb-card>
-  <nb-card-header></nb-card-header>
-  <nb-card-body></nb-card-body>
+  <nb-card-header>
+    <div class="d-flex justify-content-between align-items-center w-100">
+      <h4>Wishlist 1</h4>
+      <span>x résultats</span>
+    </div>
+  </nb-card-header>
+  <nb-card-body>
+    <ng2-smart-table [settings]="settings" (deleteConfirm)="onDeleteConfirm($event)">
+    </ng2-smart-table>
+  </nb-card-body>
   <nb-card-footer></nb-card-footer>
 </nb-card>
