@@ -24,28 +24,32 @@ export class CollectionComponent implements OnInit {
       confirmDelete: true,
     },
     columns: {
-      id: {
-        title: 'ID',
+      isbn: {
+        title: 'ISBN',
+        type: 'string',
+      },
+      series_title: {
+        title: 'Série',
+        type: 'string',
+      },
+      title: {
+        title: 'Titre',
+        type: 'string',
+      },
+      volume_number: {
+        title: 'Volume',
         type: 'number',
       },
-      firstName: {
-        title: 'First Name',
+      book_type: {
+        title: 'Type',
         type: 'string',
       },
-      lastName: {
-        title: 'Last Name',
+      publication_date: {
+        title: 'Publication',
         type: 'string',
       },
-      username: {
-        title: 'Username',
-        type: 'string',
-      },
-      email: {
-        title: 'E-mail',
-        type: 'string',
-      },
-      age: {
-        title: 'Age',
+      publisher: {
+        title: 'Éditeur',
         type: 'number',
       },
     },
