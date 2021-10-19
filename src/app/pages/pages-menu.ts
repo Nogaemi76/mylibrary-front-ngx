@@ -22,24 +22,24 @@ export const MENU_ITEMS: NbMenuItem[] = [
     ],
   },
   {
-    title: 'Collections',
+    title: 'Mes Collections',
     icon: 'list-outline',
-    children: [
-      {
-        title: 'Collection 1',
-        link: 'books/collection',
-      },
-    ],
+    link: 'books/collections',
+  },
+   {
+    title: 'Collection-details',
+    icon: 'list-outline',
+    link: 'books/collections/:uid',
   },
   {
-    title: 'Wishlists',
+    title: 'Mes Wishlists',
     icon: 'heart-outline',
-    children: [
-      {
-        title: 'Wislist 1',
-        link: 'books/wishlist',
-      },
-    ],
+    link: 'books/wishlists',
+  },
+  {
+    title: 'Wishlist-details',
+    icon: 'heart-outline',
+    link: 'books/wishlists/:uid',
   },
   {
     title: 'E-commerce',

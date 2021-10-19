@@ -2,8 +2,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Path } from 'leaflet';
 import { BooksComponent } from './books.component';
-import { CollectionComponent } from './collection/collection.component';
-import { WishlistComponent } from './wishlist/wishlist.component';
+import { CollectionDetailsComponent } from './list-collections/collection-details/collection-details.component';
+import { ListCollectionsComponent } from './list-collections/list-collections.component';
+import { ListWishlistsComponent } from './list-wishlists/list-wishlists.component';
+import { WishlistDetailsComponent } from './list-wishlists/wishlist-details/wishlist-details.component';
 
 const routes: Routes = [
   {
@@ -11,13 +13,21 @@ const routes: Routes = [
     component: BooksComponent,
     children: [
       {
-        path: 'collection',
-        component: CollectionComponent
+        path: 'collections',
+        component: ListCollectionsComponent,
       },
       {
-        path: 'wishlist',
-        component: WishlistComponent
+        path: 'collections/:uid',
+        component: CollectionDetailsComponent
       },
+      {
+        path: 'wishlists',
+        component: ListWishlistsComponent,
+      },
+      {
+        path: 'wishlists/:uid',
+        component: WishlistDetailsComponent
+      }
     ]
   }
 ];
