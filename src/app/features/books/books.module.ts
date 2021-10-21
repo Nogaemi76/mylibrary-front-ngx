@@ -5,7 +5,7 @@ import { BooksRoutingModule } from './books-routing.module';
 import { CollectionComponent } from './collection/collection.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
 import { BooksComponent } from './books.component';
-import { NbButtonModule, NbCardModule, NbIconModule, NbUserModule } from '@nebular/theme';
+import { NbButtonModule, NbCardModule, NbIconModule, NbListModule, NbUserModule } from '@nebular/theme';
 import { Ng2SmartTableModule } from 'ng2-smart-table';
 import { CollectionDetailsComponent } from './list-collections/collection-details/collection-details.component';
 import { ListCollectionsComponent } from './list-collections/list-collections.component';
@@ -31,6 +31,7 @@ import { BookDetailsComponent } from '../../shared/book-details/book-details.com
     NbCardModule,
     NbIconModule,
     NbUserModule,
+    NbListModule,
     Ng2SmartTableModule,
     NbButtonModule,
   ]

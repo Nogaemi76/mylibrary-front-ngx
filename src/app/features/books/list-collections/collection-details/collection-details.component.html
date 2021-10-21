@@ -17,8 +17,41 @@
     </div>
   </nb-card-header>
   <nb-card-body>
-    <ng2-smart-table [settings]="settings" (deleteConfirm)="onDeleteConfirm($event)">
-    </ng2-smart-table>
+    <!-- <ng2-smart-table [settings]="settings" (deleteConfirm)="onDeleteConfirm($event)">
+    </ng2-smart-table> -->
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">ISBN</th>
+          <th scope="col">Série</th>
+          <th scope="col">Titre</th>
+          <th scope="col">Volume</th>
+          <th scope="col">Type</th>
+          <th scope="col">Publication</th>
+          <th scope="col">Éditeur</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+          <td>
+            <button nbButton status="primary" size="tiny" (click)="open()">Voir les détails</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </nb-card-body>
   <!-- <nb-card-footer></nb-card-footer> -->
 </nb-card>
+
+
